@@ -1,0 +1,181 @@
+:root{
+  --black_1:#020202;
+  --black_2:#0f0f0f;
+  --gray_1:#3b3939;
+  --gray_1_t:#3b3939ea;
+  --gray_2:#898989;
+  --gray_2_t:#898989f1;
+  --white_1:#fbfbfb;
+  --white_2:#cacaca;
+  --magenta_1:#cb4353;
+  --magenta_2:#84444c;
+  --green_1: #16792b;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  transition: 100ms ease-in-out;
+}
+*::-webkit-scrollbar {
+  width: 8px;     /* Tamaño del scroll en vertical */
+  height: 8px;    /* Tamaño del scroll en horizontal */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+*::-webkit-scrollbar-thumb {
+  background: var(--magenta_1);
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--magenta_2);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+*::-webkit-scrollbar-thumb:active {
+  background-color: var(--magenta_2);
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+*::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+*::-webkit-scrollbar-track:hover,
+*::-webkit-scrollbar-track:active {
+background: #d4d4d4;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 62.5%;
+  font-size: 1.2rem;
+}
+main{
+  height: 100vh;
+  width: 100vw;
+}
+button{
+  cursor: pointer;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 2px;
+  min-width: 100px;
+  height: fit-content;
+  font-weight: 600;
+}
+button:hover{
+  background: none;
+  color: var(--green_1);
+  border: 2px solid var(--green_1);
+}
+input,textarea{
+  outline: none;
+  padding: 5px;
+  font-size: 1.1rem;
+}
+ul{
+  list-style: none;
+}
+li{
+  padding: 5px;
+}
+a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+img{
+  object-fit: cover;
+}
+/* no copiar */
+
+main >img{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  filter: blur(5px);
+  /* opacity: 0.7; */
+  z-index: -1;
+}
+.formato{
+  white-space: pre;
+}
+
+@media screen and (max-width: 900px){
+
+  #principal_page {
+    grid-template-columns: auto !important;
+    grid-template-rows: auto min-content;
+  }
+  #panel{
+    height: min-content !important;
+    display: grid !important;
+    grid-template-columns: 2fr 1fr;
+    grid-row: 2;
+  }
+  #panel ul{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+    justify-content: center;
+  }
+  #panel ul>li{
+    display: flex;
+    justify-content: center;
+  }
+
+  #panel > h1,h3{
+    display: none;
+  }
+  .nav > p{
+    display: none;
+  }
+  #logout_button{
+    min-width: 50px ;
+  }
+  #logout_button >p{
+    width: 0;
+    display: none;
+  }
+
+  #principal_grid{
+    grid-template-columns: auto !important;
+  }
+
+  #cards{
+    grid-row: 2;
+  }
+  .user_img{
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .data_user{
+    grid-template-columns: 1 !important;
+    grid-auto-rows: auto;
+  }
+  .titulo{
+    display: block;
+  }
+
+  #text_area{
+    height: 5ch;
+  }
+  .online_user{
+    display: inline-block !important;
+  }
+
+  #profile_contend{
+    grid-template-columns: auto !important;
+    grid-template-rows: auto auto;
+  }
+  body {
+    font-size: .8rem !important;
+  }
+}
