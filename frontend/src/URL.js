@@ -1,1 +1,1 @@
-export const url_dir = 'http://192.168.31.236:3002'
+export const url_dir = 'https://9d43-186-84-90-81.ngrok.io'
