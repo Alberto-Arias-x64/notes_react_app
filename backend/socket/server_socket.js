@@ -5,10 +5,12 @@ const http = require('http')
 const { Server } = require('socket.io')
 const { app } = require('../src/server')
 
+const url_dir = 'https://sleepy-caverns-95273.herokuapp.com'
+
 const server = http.createServer(app)
 const io = new Server(server, {
     cors: {
-        origin: ["http://127.0.0.1", "http://192.168.31.236","https://9d43-186-84-90-81.ngrok.io"]
+        origin: ["http://127.0.0.1",url_dir]
     }
 });
 

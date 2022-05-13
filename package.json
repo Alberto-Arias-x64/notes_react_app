@@ -1,0 +1,19 @@
+{
+  "name": "bootcam_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private":true,
+  "workspaces":[
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run socket --workspaces=backend",
+    "build": "npm run build --workspaces=frontend"
+  },
+  "keywords": [],
+  "author": "Simio",
+  "license": "ISC"
+}

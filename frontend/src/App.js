@@ -23,7 +23,7 @@ function App() {
 
   return (
     <main>
-      <img src={`${url_dir}/full/backstage_full.png`} alt="background" />
+      <img src={`${url_dir}/tiny/backstage.png`} alt="background" />
       <Routes>
         <Route path='/login' element={<Login />} />
         {state.user.code === 'LOGGED' ?
