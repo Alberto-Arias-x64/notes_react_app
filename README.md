@@ -27,7 +27,7 @@ If you wana see a demo see [THIS LINK](https://note-app-x64.herokuapp.com/login)
 
 ## Roadmap
 
-- Add more funcionalitis
+- Add more funcionalities
 - Create private channels of communication between users
 - Bucket to post images
 - Interaction with more users
