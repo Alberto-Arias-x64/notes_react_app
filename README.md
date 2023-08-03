@@ -1,7 +1,7 @@
 
-# Bootcam JS 
+# React notes app
 
-This is the presentation of the final project of the full stack boocam of [Midudev](https://www.youtube.com/watch?v=wTpuKOhGfJE&list=PLV8x_i1fqBw0Kn_fBIZTa3wS_VZAqddX7) which consists of an app to post messages on a public board.
+This is the presentation of the final project of the full stack project of [Midudev](https://www.youtube.com/watch?v=wTpuKOhGfJE&list=PLV8x_i1fqBw0Kn_fBIZTa3wS_VZAqddX7) which consists of an app to post messages on a public board.
 
 
 ## Demo
